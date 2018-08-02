@@ -2,7 +2,21 @@
 
 ZooKeeper命令行界面（CLI）用于与ZooKeeper集合进行交互以进行开发。它有助于调试和解决不同的选项。
 
-要执行ZooKeeper CLI操作，首先打开ZooKeeper服务器（“bin/zkServer.sh start”），然后打开ZooKeeper客户端（“bin/zkCli.sh”）。一旦客户端启动，你可以执行以下操作：
+要执行ZooKeeper CLI操作，首先打开ZooKeeper服务器（“bin/zkServer.sh start”），然后打开ZooKeeper客户端（“bin/zkCli.sh”）。
+
+常用的启动、停止、重启命令：
+
+```
+zkServer.sh start  #启动
+
+zkServer.sh stop   #停止
+
+zkServer.sh restart #重启
+
+zkServer.sh status  #查看状况
+```
+
+一旦客户端启动，你可以执行以下操作：
 
 1、创建znode
 
