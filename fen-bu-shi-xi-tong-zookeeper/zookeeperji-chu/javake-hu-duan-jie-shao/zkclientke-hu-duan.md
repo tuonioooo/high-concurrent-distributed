@@ -134,11 +134,15 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
         String ip = address.getHostAddress().toString();
         //创建当前服务器节点
         zkClient.createEphemeral(PATH+"/"+serviceName+"/"+ip);
-        
+
         for (String item : zkClient.getChildren("/configcenter")) {
             System.out.println(item);
         }
 ```
 
+## 参考文档
 
+[https://www.cnblogs.com/JNUX/articles/6054154.html](https://www.cnblogs.com/JNUX/articles/6054154.html) 
+
+[https://blog.csdn.net/wo541075754/article/details/68929512](https://blog.csdn.net/wo541075754/article/details/68929512)
 
