@@ -14,7 +14,7 @@ Finagle是Twitter基于Netty开发的支持容错的、协议无关的RPC框架�
 
 * [Dubbo](https://github.com/alibaba/dubbo)
 
-Dubbo 是阿里巴巴公司开源的一个高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring框架无缝集成。
+Dubbo 是阿里巴巴公司开源的一个高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring框架无缝集成。——[百度百科](https://baike.baidu.com/item/Dubbo/18907815?fr=aladdin)
 
 * [gRPC](http://www.grpc.io/)
 
