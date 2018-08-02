@@ -99,8 +99,7 @@ TCP（Transmission Control Protocol 传输控制协议）是一种面向连接�
 
 捕获过滤器中填入表达式：host www.cnblogs.com and port 80（80等效于http）
 
-  
-
-
 有多个TCP流时在显示过滤器中填入表达式：tcp.stream eq 0 筛选出第一个TCP流（包含完整的一次TCP连接：三次握手和四次挥手）
+
+![](/assets/import-tcp-03.png)
 
