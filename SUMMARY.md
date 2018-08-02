@@ -17,7 +17,7 @@
   * [Zookeeper介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperjie-shao.md)
   * [Zookeeper基础](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu.md)
     * [单机部署](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/dan-ji-bu-shu.md)
-      * 下载、目录说明
+      * [下载、目录说明](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/dan-ji-bu-shu/xia-zai-3001-mu-lu-shuo-ming.md)
       * 官方资料介绍
       * 安装部署
       * 配置文件详解
@@ -25,10 +25,10 @@
       * [数据模型](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/shu-ju-mo-xing.md)
         * 节点属性
         * 节点类型
-      * 会话
+      * [会话](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/hui-hua.md)
       * 版本
-      * watch机制的应用及原理分析
-      * 权限acl控制机制
+      * [watch机制的应用及原理分析](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/watchji-zhi-de-ying-yong-ji-yuan-li-fen-xi.md)
+      * [权限acl控制机制](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/quan-xian-acl-kong-zhi-ji-zhi.md)
     * 客户端常用命令
     * [Java客户端介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao.md)
       * 原生
@@ -38,4 +38,5 @@
     * 一致性协议
     * zk集群
     * 典型的应用场景
+  * Zookeeper工作流
 
