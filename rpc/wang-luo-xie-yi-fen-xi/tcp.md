@@ -103,28 +103,15 @@ TCP（Transmission Control Protocol 传输控制协议）是一种面向连接�
 
 ![](/assets/import-tcp-03.png)每条记录都有如下协议层
 
-  
-
-
-（1） Frame:   物理层的数据帧概况
-
-  
-
+（1） Frame:   物理层的数据帧概况
 
 （2）Ethernet II: 数据链路层以太网帧头部信息
 
-  
-
-
 （3） Internet Protocol Version 4: 互联网层IP包头部信息
 
-  
+（4）Transmission Control Protocol:  传输层的数据段头部信息，此处是TCP
 
+（5） Hypertext Transfer Protocol:  应用层的信息，此处是HTTP协议
 
-（4）Transmission Control Protocol:  传输层的数据段头部信息，此处是TCP
-
-  
-
-
-（5） Hypertext Transfer Protocol:  应用层的信息，此处是HTTP协议
+![](/assets/import-tcp-05.png)
 
