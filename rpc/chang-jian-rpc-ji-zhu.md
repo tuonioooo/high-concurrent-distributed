@@ -22,7 +22,7 @@ gRPC是一个高性能、通用的开源RPC框架，其由Google主要面向移�
 
 相关教程文档：[http://doc.oschina.net/grpc?t=60134](http://doc.oschina.net/grpc?t=60134)
 
-* JavaRMI 
+* [JavaRMI ](https://baike.baidu.com/item/JavaRMI/8798326)
 
 [RMI](https://baike.baidu.com/item/RMI)（Remote Method Invocation，[远程](https://baike.baidu.com/item/远程)方法调用）是用Java在JDK1.2中实现的，它大大增强了Java开发
 
