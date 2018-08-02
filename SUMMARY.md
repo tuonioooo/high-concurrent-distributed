@@ -26,4 +26,5 @@
     * [curator客户端](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/curatorke-hu-duan.md)
     * [zkClient客户端](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/zkclientke-hu-duan.md)
   * Zookeeper leader选举
+  * Zookeeper高级知识
 
