@@ -35,7 +35,9 @@ RPC只是描绘了 Client 与 Server 之间的点对点调用流程，包括 stu
 
 _**跨语言调用型的 RPC 框架有 Thrift、gRPC、Hessian、Finagle**_ 等，这一类的 RPC 框架重点关注于服务的跨语言调用，能够支持大部分的语言进行语言无关的调用，非常适合于为不同语言提供通用远程服务的场景。但_**这类框架没有服务发现相关机制**_，实际使用时一般需要代理层进行请求转发和负载均衡策略控制。
 
-[Dubbo](http://dubbo.io/)是阿里巴巴公司开源的一个Java高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring框架无缝集成。 不过，遗憾的是，据说在淘宝内部，dubbo由于跟淘宝另一个类似的框架HSF（非开源）有竞争关系，导致dubbo团队已经解散（参见[http://www.oschina.net/news/55059/druid-1-0-9](http://www.oschina.net/news/55059/druid-1-0-9)中的评论）。 不过反倒是墙内开花墙外香，其它的一些知名电商如当当 \(dubbox\)、京东、国美维护了自己的分支或者在dubbo的基础开发， 但是官方的实现缺乏维护，其它电商虽然维护了自己的版本，但是还是不能做大的架构的改动和提升，相关的依赖类比如Spring，Netty还是很老的版本\(Spring 3.2.16.RELEASE, netty 3.2.5.Final\)， 而且现在看来，Dubbo的代码结构也过于复杂了。
+[Dubbo](http://dubbo.io/)是阿里巴巴公司开源的一个Java高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring框架无缝集成。 不过，遗憾的是，据说在淘宝内部，dubbo由于跟淘宝另一个类似的框架HSF（非开源）有竞争关系，导致dubbo团队已经解散（参见[http://www.oschina.net/news/55059/druid-1-0-9](http://www.oschina.net/news/55059/druid-1-0-9)中的评论）。 不过反倒是墙内开花墙外香，其它的一些知名电商如当当 \(dubbox\)、京东、国美维护了自己的分支或者在dubbo的基础开发， 但是官方的实现缺乏维护，其它电商虽然维护了自己的版本，但是还是不能做大的架构的改动和提升，相关的依赖类比如Spring，Netty还是很老的版本\(Spring 3.2.16.RELEASE, netty 3.2.5.Final\)， 而且现在看来，Dubbo的代码结构也过于复杂了。不过，在2017年阿里又重新维护了Dubbo，如图：
+
+![](/assets/import-rpc-01.png)
 
 所以，尽管Dubbo在电商的开发圈比较流行的时候，国内一些的互联网公司也在开发自己的RPC框架，比如Motan。[Motan](https://github.com/weibocom/motan)是新浪微博开源的一个Java 框架。它诞生的比较晚，起于2013年，2016年5月开源。 Motan 在微博平台中已经广泛应用，每天为数百个服务完成近千亿次的调用。Motan的架构相对简单，功能也能满足微博内部架构的要求, 虽然Motan的架构的目的主要不是跨语言，但是目前也在开发支持php client和C server特性。
 
