@@ -88,7 +88,7 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
         ZkClient zkClient = new ZkClient("127.0.0.1:2181");
         String serviceName = "service-B";
         String zkServiceList = "127.0.0.1:2181";
-        
+
         String SERVICE_PATH = "/configcenter/"+serviceName;
         //判断是否存在
         boolean serviceExists = zkClient.exists(SERVICE_PATH);
@@ -100,7 +100,7 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
         }
         //注册事件监听
         zkClient.subscribeChildChanges(SERVICE_PATH, new IZkChildListener() {
-            
+
             @Override
             public void handleChildChange(String arg0, List<String> currentChilds) throws Exception {
                 // TODO Auto-generated method stub
@@ -110,5 +110,5 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
         });
 ```
 
-
+这段代码实例化了一个zkClient对象，判断服务名称是否已经注册，如果还没有注册该节点，则表明没有该服务，继而抛出异常。如果存在则获取其所有子节点获取地址后就可以通过负载均衡算法，选出一台服务器，发起远程调用。服务器列表缓存在本地只有当地址列表发生变化时，才需要更新该列表，以降低网络开销。这就是注册一个 subscribeChildChanges 的作用。
 
