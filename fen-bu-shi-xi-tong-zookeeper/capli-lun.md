@@ -40,7 +40,21 @@ NoSQL系统仅提供对行级别的原子性保证，也就是说同时对同一
 
 ## 与BASE的关系
 
+BASE就是为了解决关系数据库强一致性引起的问题而引起的可用性降低而提出的解决方案。
 
+BASE是下面三个术语的缩写：
+
+基本可用（Basically Available）
+
+软状态（Soft state）
+
+最终一致（Eventually consistent）
+
+目前最快的KV数据库,10W次/S, 满足了高可用性。
+
+Redis的k-v上的v可以是普通的值（基本操作：get/set/del） v可以是数值（除了基本操作之外还可以支持数值的计算） v可以是数据结构比如基于链表存储的双向循环list（除了基本操作之外还可以支持数值的计算，可以实现list的二头pop,push）。如果v是list，可以使用redis实现一个消息队列。如果v是set,可以基于redis实现一个tag系统。与mongodb不同的地方是后者的v可以支持文档，比如按照json的结构存储。redis也可以对存入的Key-Value设置expire时间。
+
+Redis的v的最大远远超过memcache。这也是实现消息队列的一个前提。
 
 
 
