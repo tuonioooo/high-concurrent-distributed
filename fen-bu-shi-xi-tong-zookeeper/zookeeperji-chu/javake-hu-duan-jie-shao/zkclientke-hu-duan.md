@@ -83,3 +83,32 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
 
 一旦服务器与Zookeeper集群断开连接，节点就不存在了，通过注册相应的watcher，服务消费者能够第一时间获知提供者机器信息的变更。利用其znode的特点和watcher记住，将作为动态注册和获取服务信息的配置中心，统一管理服务名称和其对应的服务列表消息。我们近乎实时的感知到后端服务器的状态（上线、下线、宕机）。Zookeeper集群之间通过zab协议，服务配置信息能够保持一致，而Zookeeper本身的容错特性和leader选举机制，能保障我们方便地进行扩容。
 
+```
+//基于Zookeeper所实现的服务消费者获取服务提供者地址列表的关键代码 消费者
+        ZkClient zkClient = new ZkClient("127.0.0.1:2181");
+        String serviceName = "service-B";
+        String zkServiceList = "127.0.0.1:2181";
+        
+        String SERVICE_PATH = "/configcenter/"+serviceName;
+        //判断是否存在
+        boolean serviceExists = zkClient.exists(SERVICE_PATH);
+        //如果存在，获取地址列表
+        if(serviceExists){
+            serviceList = zkClient.getChildren(SERVICE_PATH);
+        }else{
+            throw new RuntimeException("节点不存在");
+        }
+        //注册事件监听
+        zkClient.subscribeChildChanges(SERVICE_PATH, new IZkChildListener() {
+            
+            @Override
+            public void handleChildChange(String arg0, List<String> currentChilds) throws Exception {
+                // TODO Auto-generated method stub
+                //返回新的列表
+                serviceList = currentChilds;
+            }
+        });
+```
+
+
+
