@@ -65,9 +65,12 @@ RPC 的消息传输可以通过 TCP、UDP 或者 HTTP等，所以有时候我们
 
 RPC over TCP可以通过长连接减少连接的建立所产生的花费，在调用次数非常巨大的时候\(这是目前互联网公司经常遇到的情况,大并发的情况下\)，这个花费影响是非常巨大的。 当然_** RESTful 也可以通过 keep-alive 实现长连接**_， _**但是它最大的一个问题是它的request-response模型是阻塞的 \(http1.0和 http1.1, http 2.0没这个问题\)**_， 发送一个请求后只有等到response返回才能发送第二个请求 \(有些http server实现了pipeling的功能，但不是标配\)， RPC的实现没有这个限制。
 
-在当今用户和资源都是大数据大并发的趋势下，一个大规模的公司不可能使用一个单体程序提供所有的功能，微服务的架构模式越来越多的被应用到产品的设计和开发中， 服务和服务之间的通讯也越发的重要， 所以 RPC 不失是一个解决服务之间通讯的好办法， 本书给大家介绍 Go 语言的 RPC的开发实践。
+在当今用户和资源都是大数据大并发的趋势下，一个大规模的公司不可能使用一个单体程序提供所有的功能，微服务的架构模式越来越多的被应用到产品的设计和开发中， 服务和服务之间的通讯也越发的重要， 所以 RPC 不失是一个解决服务之间通讯的好办法。
 
 ## 参考文档
 
-[百度百科](https://baike.baidu.com/item/远程过程调用协议/6893245?fromtitle=RPC&fromid=609861&fr=aladdin)
+1. [百度百科](https://baike.baidu.com/item/远程过程调用协议/6893245?fromtitle=RPC&fromid=609861&fr=aladdin) 
+2. [https://legacy.gitbook.com/book/smallnest/go-rpc-programming-guide/details](https://legacy.gitbook.com/book/smallnest/go-rpc-programming-guide/details)
+
+
 
