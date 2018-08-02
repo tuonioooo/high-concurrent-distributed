@@ -20,7 +20,7 @@
   * [Zookeeper单机部署](fen-bu-shi-xi-tong-zookeeper/zookeeperdan-ji-bu-shu.md)
   * [Zookeeper配置文件详解、下载目录说明](fen-bu-shi-xi-tong-zookeeper/zookeeperpei-zhi-wen-jian-xiang-jie.md)
   * [Zookeeper leader选举](fen-bu-shi-xi-tong-zookeeper/zookeeper-leaderxuan-ju.md)
-  * 客户端常用命令
+  * [Zookeeper CLI/客户端常用命令](fen-bu-shi-xi-tong-zookeeper/ke-hu-duan-chang-yong-ming-ling.md)
   * [Java客户端介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao.md)
     * 原生
     * zkclient客户端
