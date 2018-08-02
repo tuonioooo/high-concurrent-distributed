@@ -13,7 +13,7 @@
     * [UDP](rpc/wang-luo-xie-yi-fen-xi/udp.md)
     * [应用层HTTP协议](rpc/wang-luo-xie-yi-fen-xi/ying-yong-ceng-http-xie-yi.md)
 * [分布式系统Zookeeper](fen-bu-shi-xi-tong-zookeeper.md)
-  * CAP理论
+  * [CAP理论](fen-bu-shi-xi-tong-zookeeper/capli-lun.md)
   * Zookeeper介绍
   * [Zookeeper基础](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu.md)
     * [单机部署](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/dan-ji-bu-shu.md)
