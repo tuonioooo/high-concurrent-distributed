@@ -53,5 +53,11 @@ server.3=mod.cn:2888:3888
 #autopurge.purgeInterval=1
 ```
 
+> tickTime：
+>
+> 时长单位为毫秒，为zk使用的基本时间度量单位。例如，1 \* tickTime是客户端与zk服务端的心跳时间，2 \* tickTime是客户端会话的超时时间。
+>
+> tickTime的默认值为2000毫秒，更低的tickTime值可以更快地发现超时问题，但也会导致更高的网络流量（心跳消息）和更高的CPU使用率（会话的跟踪处理）。
+
 
 
