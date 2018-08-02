@@ -27,7 +27,11 @@
       * [curator客户端](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/curatorke-hu-duan.md)
       * [zkClient客户端](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/zkclientke-hu-duan.md)
   * [Zookeeper高级知识](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi.md)
-    * [一致性协议](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/yi-zhi-xing-xie-yi.md)
     * [Zookeeper集群](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/zookeeperji-qun.md)
     * [典型的应用场景](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing.md)
+      * 分布式配置中心
+      * 分布式锁
+      * 集群的容错
+      * 命名服务
+      * zk的注意事项
 
