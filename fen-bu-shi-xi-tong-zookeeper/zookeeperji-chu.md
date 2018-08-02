@@ -62,7 +62,7 @@ Znode被分为持久（persistent）节点，顺序（sequential）节点和临�
 
 每一个Znode都由三部分组成，
 
-**stat**：状态信息， 描述此Znode的版本时间权限等信息。
+**stat**：状态信息， 描述此Znode的版本时间权限数据长度等信息。
 
 **data**：与该Znode关联的数据。
 
