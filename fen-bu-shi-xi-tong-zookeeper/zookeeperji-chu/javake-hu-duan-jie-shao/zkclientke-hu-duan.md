@@ -110,5 +110,35 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
         });
 ```
 
-这段代码实例化了一个zkClient对象，判断服务名称是否已经注册，如果还没有注册该节点，则表明没有该服务，继而抛出异常。如果存在则获取其所有子节点获取地址后就可以通过负载均衡算法，选出一台服务器，发起远程调用。服务器列表缓存在本地只有当地址列表发生变化时，才需要更新该列表，以降低网络开销。这就是注册一个 subscribeChildChanges 的作用。
+这段代码实例化了一个zkClient对象，判断服务名称是否已经注册，如果还没有注册该节点，则表明没有该服务，继而抛出异常。如果存在则获取其所有子节点获取地址后就可以通过负载均衡算法，选出一台服务器，发起远程调用。服务器列表缓存在本地只有当地址列表发生变化时，才需要更新该列表，以降低网络开销。这就是注册一个 subscribeChildChanges 的作用。
+
+## 服务提供者想Zookeeper集群注册的部分关键代码
+
+```
+//服务提供者想Zookeeper集群注册服务的关键代码  服务者
+        ZkClient zkClient = new ZkClient("127.0.0.1:2181");
+        String PATH = "/configcenter";//根节点路径
+        //判断是否存在
+        boolean rootExists = zkClient.exists(PATH);
+        //如果存在，获取地址列表
+        if(!rootExists){
+            zkClient.createPersistent(PATH);
+        }
+        String serviceName = "service-c";
+        boolean serviceExists = zkClient.exists(PATH+"/"+serviceName);
+        if(!serviceExists){
+            zkClient.createPersistent((PATH+"/"+serviceName));
+        }
+        InetAddress address  = InetAddress.getLocalHost();
+        //创建当前服务器节点
+        String ip = address.getHostAddress().toString();
+        //创建当前服务器节点
+        zkClient.createEphemeral(PATH+"/"+serviceName+"/"+ip);
+        
+        for (String item : zkClient.getChildren("/configcenter")) {
+            System.out.println(item);
+        }
+```
+
+
 
