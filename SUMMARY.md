@@ -30,5 +30,6 @@
     * 一致性协议
     * zk集群
     * 典型的应用场景
-  * Zookeeper工作流
+  * [Zookeeper工作流](fen-bu-shi-xi-tong-zookeeper/zookeepergong-zuo-liu.md)
+  * Zookeeper单机部署
 
