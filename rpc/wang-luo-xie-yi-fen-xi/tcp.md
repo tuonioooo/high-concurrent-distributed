@@ -95,3 +95,12 @@ TCP（Transmission Control Protocol 传输控制协议）是一种面向连接�
 为什么关闭的时候却是四次挥（握）手？  
 因为当Server端收到Client端的SYN连接请求报文后，可以直接发送SYN+ACK报文。其中ACK报文是用来应答的，SYN报文是用来同步的。但是关闭连接时，当Server端收到FIN报文时，很可能并不会立即关闭SOCKET，所以只能先回复一个ACK报文，告诉Client端，"你发的FIN报文我收到了"。只有等到我Server端所有的报文都发送完了，我才能发送FIN报文，因此不能一起发送。故需要四步握手。
 
+## TCP报文抓取工具：Wireshark
+
+捕获过滤器中填入表达式：host www.cnblogs.com and port 80（80等效于http）
+
+  
+
+
+有多个TCP流时在显示过滤器中填入表达式：tcp.stream eq 0 筛选出第一个TCP流（包含完整的一次TCP连接：三次握手和四次挥手）
+
