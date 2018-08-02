@@ -115,5 +115,5 @@ TCP（Transmission Control Protocol 传输控制协议）是一种面向连接�
 
 ## ![](/assets/import-tcp-05.png)参考文档
 
-[百度百科](https://baike.baidu.com/item/网络七层协议/6056879)
+[百度百科](https://baike.baidu.com/item/TCP/33012)
 
