@@ -7,9 +7,6 @@
     * [RPC核心过程/RPC需要解决的问题](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng.md)
     * RPC框架
   * [常见RPC技术](rpc/chang-jian-rpc-ji-zhu.md)
-    * rmi
-    * http
-    * hessian
   * [网络协议分析](rpc/wang-luo-xie-yi-fen-xi.md)
     * 网络七层
     * TCP
