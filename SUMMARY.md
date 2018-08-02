@@ -25,8 +25,6 @@
       * [数据模型](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/shu-ju-mo-xing.md)
         * 节点属性
         * 节点类型
-      * [会话](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/hui-hua.md)
-      * 版本
       * [watch机制的应用及原理分析](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/watchji-zhi-de-ying-yong-ji-yuan-li-fen-xi.md)
       * [权限acl控制机制](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/zookeeperte-xing/quan-xian-acl-kong-zhi-ji-zhi.md)
     * 客户端常用命令
