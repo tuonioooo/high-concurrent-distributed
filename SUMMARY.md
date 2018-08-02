@@ -8,6 +8,7 @@
       * [通信协议](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng/tong-xin-xie-yi.md)
       * [寻址](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng/xun-zhi.md)
       * [序列化](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng/xu-lie-hua.md)
+      * [负载均衡](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng/fu-zai-jun-heng.md)
     * RPC框架
   * [常见RPC技术](rpc/chang-jian-rpc-ji-zhu.md)
     * rmi
