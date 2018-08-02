@@ -1,4 +1,4 @@
-# CAP理论
+# CAP理论——[百科](https://baike.baidu.com/item/CAP%E5%8E%9F%E5%88%99/5712863?fr=aladdin)
 
 ## 概述
 
