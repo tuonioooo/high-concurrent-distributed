@@ -16,6 +16,8 @@
   * [CAP理论](fen-bu-shi-xi-tong-zookeeper/capli-lun.md)
   * [Zookeeper高级知识](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi.md)
     * 一致性协议
+    * [Zookeeper集群](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/zookeeperji-qun.md)
+    * 典型的应用场景
   * [Zookeeper基础知识](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu-zhi-shi.md)
     * [Zookeeper介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperjie-shao.md)
     * [Zookeeper基础](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu.md)
