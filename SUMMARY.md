@@ -23,7 +23,7 @@
   * [Zookeeper CLI/客户端常用命令](fen-bu-shi-xi-tong-zookeeper/ke-hu-duan-chang-yong-ming-ling.md)
   * [Java客户端介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao.md)
     * [原生Zookeeper API](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/yuan-sheng.md)
-    * curator客户端
+    * [curator客户端](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/curatorke-hu-duan.md)
     * [zkClient客户端](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao/zkclientke-hu-duan.md)
   * Zookeeper leader选举
 
