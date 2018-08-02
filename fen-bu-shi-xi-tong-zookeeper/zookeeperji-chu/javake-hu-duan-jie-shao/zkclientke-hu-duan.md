@@ -38,3 +38,44 @@ public static void main( String[] args )
 
 ZkClient将Zookeeper的watcher机制转化为一种更加容易理解的订阅形式，并且这种关系是可以保持的，而非一次性的。也就是说子节点的变化、数据的变化、状态的变化是可以订阅的。当watcher使用完后，zkClient会自动增加一个相同的watcher。
 
+```
+zkClient.subscribeChildChanges("/root", new IZkChildListener() {
+            
+            @Override
+            public void handleChildChange(String arg0, List<String> arg1) throws Exception {
+                // TODO Auto-generated method stub
+                System.out.println("子节点的变化");
+            }
+        });
+        zkClient.subscribeDataChanges("/root", new IZkDataListener() {
+            
+            @Override
+            public void handleDataDeleted(String arg0) throws Exception {
+                // TODO Auto-generated method stub
+                System.out.println("数据被删除");
+            }
+            
+            @Override
+            public void handleDataChange(String arg0, Object arg1) throws Exception {
+                // TODO Auto-generated method stub
+                System.out.println("数据被更改");
+            }
+        });
+        zkClient.subscribeStateChanges(new IZkStateListener() {
+            
+            @Override
+            public void handleStateChanged(KeeperState arg0) throws Exception {
+                // TODO Auto-generated method stub
+                System.out.println("数据状态改变");
+            }
+            
+            @Override
+            public void handleNewSession() throws Exception {
+                // TODO Auto-generated method stub
+                System.out.println("当session expire异常重新连接时，由于原来的所有的watcher和EPHEMERAL节点都已失效，可以在这里进行相应的容错处理");
+            }
+        });
+```
+
+
+
