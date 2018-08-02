@@ -142,7 +142,13 @@ zkClient.subscribeChildChanges("/root", new IZkChildListener() {
 
 ## 参考文档
 
-[https://www.cnblogs.com/JNUX/articles/6054154.html](https://www.cnblogs.com/JNUX/articles/6054154.html) 
+第三方：
 
-[https://blog.csdn.net/wo541075754/article/details/68929512](https://blog.csdn.net/wo541075754/article/details/68929512)
+[https://www.cnblogs.com/JNUX/articles/6054154.html](https://www.cnblogs.com/JNUX/articles/6054154.html)
+
+[https://blog.csdn.net/wo541075754/article/details/68929512](https://blog.csdn.net/wo541075754/article/details/68929512) 
+
+官网API介绍：
+
+[http://helix.apache.org/apidocs/reference/org/apache/helix/manager/zk/ZkClient.html](http://helix.apache.org/apidocs/reference/org/apache/helix/manager/zk/ZkClient.html)
 
