@@ -16,20 +16,15 @@
   * [CAP理论](fen-bu-shi-xi-tong-zookeeper/capli-lun.md)
   * [Zookeeper介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperjie-shao.md)
   * [Zookeeper基础](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu.md)
-    * [单机部署](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/dan-ji-bu-shu.md)
-      * [下载、目录说明](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/dan-ji-bu-shu/xia-zai-3001-mu-lu-shuo-ming.md)
-      * 官方资料介绍
-      * 安装部署
-      * 配置文件详解
-    * 客户端常用命令
-    * [Java客户端介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao.md)
-      * 原生
-      * zkclient客户端
-      * curator客户端
+  * [Zookeeper工作流](fen-bu-shi-xi-tong-zookeeper/zookeepergong-zuo-liu.md)
+  * Zookeeper单机部署
+  * 客户端常用命令
+  * [Java客户端介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao.md)
+    * 原生
+    * zkclient客户端
+    * curator客户端
   * [Zookeeper高级知识](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi.md)
     * 一致性协议
     * zk集群
     * 典型的应用场景
-  * [Zookeeper工作流](fen-bu-shi-xi-tong-zookeeper/zookeepergong-zuo-liu.md)
-  * Zookeeper单机部署
 
