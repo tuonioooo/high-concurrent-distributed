@@ -26,5 +26,9 @@ UDP报文没有可靠性保证、顺序保证和流量控制字段等，可靠�
 
 UDP在IP报文中的位置如图所示。
 
+![](/assets/import-udp-01.png)
 
+## 参考文档
+
+[百度百科](https://baike.baidu.com/item/UDP/571511?fr=aladdin)
 
