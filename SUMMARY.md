@@ -18,6 +18,7 @@
   * [Zookeeper基础](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu.md)
   * [Zookeeper工作流](fen-bu-shi-xi-tong-zookeeper/zookeepergong-zuo-liu.md)
   * [Zookeeper单机部署](fen-bu-shi-xi-tong-zookeeper/zookeeperdan-ji-bu-shu.md)
+  * [Zookeeper配置文件详解](fen-bu-shi-xi-tong-zookeeper/zookeeperpei-zhi-wen-jian-xiang-jie.md)
   * 客户端常用命令
   * [Java客户端介绍](fen-bu-shi-xi-tong-zookeeper/zookeeperji-chu/javake-hu-duan-jie-shao.md)
     * 原生
