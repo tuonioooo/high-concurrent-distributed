@@ -30,3 +30,5 @@ gRPC是一个高性能、通用的开源RPC框架，其由Google主要面向移�
 
 并不能很好地应用于[分布式对象](https://baike.baidu.com/item/分布式对象)系统。而Java RMI 则支持存储于不同[地址空间](https://baike.baidu.com/item/地址空间)的程序级对象之间彼此进行通信，实现远程对象之间的无缝远程调用。
 
+
+
