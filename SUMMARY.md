@@ -4,9 +4,9 @@
 * [RPC](rpc.md)
   * [RPC模式介绍](rpc/rpcmo-shi-jie-shao.md)
     * [RPC概念](rpc/rpcmo-shi-jie-shao/rpcgai-nian.md)
-    * [RPC核心过程](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng.md)
+    * [RPC核心过程/RPC需要解决的问题](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng.md)
       * [通信协议](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng/tong-xin-xie-yi.md)
-      * 寻址
+      * [寻址](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng/xun-zhi.md)
       * 序列化
     * RPC框架
   * [常见RPC技术](rpc/chang-jian-rpc-ji-zhu.md)
