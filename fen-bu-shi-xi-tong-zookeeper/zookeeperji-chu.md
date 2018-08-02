@@ -1,48 +1,22 @@
 # Zookeeper 基础
 
-由 
-
-xpproen
-
- 创建，youj 最后一次修改 
-
-2016-12-27
-
 
 
 在深入了解ZooKeeper的运作之前，让我们来看看ZooKeeper的基本概念。我们将在本章中讨论以下主题：
 
-  
-
-
 1、Architecture（架构）
-
-  
-
 
 2、Hierarchical namespace（层次命名空间）
 
-  
-
-
 3、Session（会话）
 
-  
-
-
 4、Watches（监视）
-
-  
-
 
 ## ZooKeeper的架构
 
 看看下面的图表。它描述了ZooKeeper的“客户端-服务器架构”。
 
-![](https://7n.w3cschool.cn/attachments/day_161229/201612291344222238.jpg "ZooKeeper的架构")  
-
-
-
+![](https://7n.w3cschool.cn/attachments/day_161229/201612291344222238.jpg "ZooKeeper的架构")
 
 作为ZooKeeper架构的一部分的每个组件在下表中进行了说明。
 
@@ -64,8 +38,7 @@ xpproen
 
 * 在**config**命名空间下，每个znode最多可存储1MB的数据。这与UNIX文件系统相类似，除了父znode也可以存储数据。这种结构的主要目的是存储同步数据并描述znode的元数据。此结构称为**ZooKeeper数据模型**。
 
-![](https://7n.w3cschool.cn/attachments/day_161229/201612291345162031.jpg "分层命名空间")  
-
+![](https://7n.w3cschool.cn/attachments/day_161229/201612291345162031.jpg "分层命名空间")
 
 ZooKeeper数据模型中的每个znode都维护着一个**stat**结构。一个stat仅提供一个znode的**元数据**。它由版本号，操作控制列表\(ACL\)，时间戳和数据长度组成。
 
@@ -81,7 +54,7 @@ ZooKeeper数据模型中的每个znode都维护着一个**stat**结构。一个s
 
 Znode被分为持久（persistent）节点，顺序（sequential）节点和临时（ephemeral）节点。
 
-* **持久节点 **- 即使在创建该特定znode的客户端断开连接后，持久节点仍然存在。默认情况下，除非另有说明，否则所有znode都是持久的。
+* **持久节点 **- 即使在创建该特定znode的客户端断开连接后，持久节点仍然存在。默认情况下，除非另有说明，否则所有znode都是持久的。
 
 * **临时节点**- 客户端活跃时，临时节点就是有效的。当客户端与ZooKeeper集合断开连接时，临时节点会自动删除。因此，只有临时节点不允许有子节点。如果临时节点被删除，则下一个合适的节点将填充其位置。临时节点在leader选举中起着重要作用。
 
@@ -95,7 +68,7 @@ Znode被分为持久（persistent）节点，顺序（sequential）节点和临�
 
 会话超时通常以毫秒为单位。当会话由于任何原因结束时，在该会话期间创建的临时节点也会被删除。
 
-## Watches（监视） 
+## Watches（监视）
 
 监视是一种简单的机制，使客户端收到关于ZooKeeper集合中的更改的通知。客户端可以在读取特定znode时设置Watches。Watches会向注册的客户端发送任何znode（客户端注册表）更改的通知。
 
