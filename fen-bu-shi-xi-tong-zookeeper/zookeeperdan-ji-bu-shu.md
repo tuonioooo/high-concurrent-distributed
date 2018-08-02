@@ -2,9 +2,9 @@
 
 在安装ZooKeeper之前，请确保你的系统是在以下任一操作系统上运行：
 
-* **任意Linux OS** - 支持开发和部署。适合演示应用程序。
+* **任意Linux OS** - 支持开发和部署。适合演示应用程序。
 
-* **Windows OS** - 仅支持开发。
+* **Windows OS** - 仅支持开发。
 
 * **Mac OS**- 仅支持开发。
 
@@ -18,7 +18,6 @@ ZooKeeper服务器是用Java创建的，它在JVM上运行。你需要使用JDK 
 
 ```
 $ java -version
-
 ```
 
 如果你在机器上安装了Java，那么可以看到已安装的Java的版本。否则，请按照以下简单步骤安装最新版本的Java。
@@ -36,7 +35,6 @@ $ java -version
 ```
 $ cd /go/to/download/path
 $ tar -zxf jdk-8u60-linux-x64.gz
-
 ```
 
 ### 步骤1.3：移动到opt目录
@@ -48,7 +46,6 @@ $ su
 password: (type password of root user)
 $ mkdir /opt/jdk
 $ mv jdk-1.8.0_60 /opt/jdk/
-
 ```
 
 ### 步骤1.4：设置路径
@@ -58,14 +55,12 @@ $ mv jdk-1.8.0_60 /opt/jdk/
 ```
 export JAVA_HOME = /usr/jdk/jdk-1.8.0_60
 export PATH=$PATH:$JAVA_HOME/bin
-
 ```
 
 现在，将所有更改应用到当前运行的系统中。
 
 ```
 $ source ~/.bashrc
-
 ```
 
 ### 步骤1.5：Java替代
@@ -74,7 +69,6 @@ $ source ~/.bashrc
 
 ```
 update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_60/bin/java 100
-
 ```
 
 ### 步骤1.6
@@ -98,7 +92,6 @@ $ cd opt/
 $ tar -zxf zookeeper-3.4.6.tar.gz
 $ cd zookeeper-3.4.6
 $ mkdir data
-
 ```
 
 ### 步骤2.3：创建配置文件
@@ -113,7 +106,6 @@ dataDir = /path/to/zookeeper/data
 clientPort = 2181
 initLimit = 5
 syncLimit = 2
-
 ```
 
 一旦成功保存配置文件，再次返回终端。你现在可以启动zookeeper服务器。
@@ -124,7 +116,6 @@ syncLimit = 2
 
 ```
 $ bin/zkServer.sh start
-
 ```
 
 执行此命令后，你将收到以下响应
@@ -133,7 +124,6 @@ $ bin/zkServer.sh start
 $ JMX enabled by default
 $ Using config: /Users/../zookeeper-3.4.6/bin/../conf/zoo.cfg
 $ Starting zookeeper ... STARTED
-
 ```
 
 ### 步骤2.5：启动CLI
@@ -142,7 +132,6 @@ $ Starting zookeeper ... STARTED
 
 ```
 $ bin/zkCli.sh
-
 ```
 
 键入上述命令后，将连接到ZooKeeper服务器，你应该得到以下响应。
@@ -158,7 +147,6 @@ Welcome to ZooKeeper!
 WATCHER::
 WatchedEvent state:SyncConnected type: None path:null
 [zk: localhost:2181(CONNECTED) 0]
-
 ```
 
 ### 停止ZooKeeper服务器
