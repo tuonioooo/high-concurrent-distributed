@@ -42,7 +42,7 @@ Client每次请求Server之前，需要向ZooKeeper中查询该服务对应的�
 
 当一个服务发生修改时，如服务的启动与关闭，都会将消息发送到感兴趣的Client。
 
-ZooKeeper的原理及使用参见[ZooKeeper项目](https://zookeeper.apache.org/) 
+ZooKeeper的原理及使用参见[ZooKeeper项目](https://zookeeper.apache.org/)
 
 ## 序列化
 
@@ -51,4 +51,10 @@ Client找到对应Server之后就需要传递参数到Server端，Server在处�
 每种序列化协议都有不同的优点和确定，一个成熟的序列化协议需要通盘考虑通用性，强健性，可调试性/可读性，性能，可扩展性以及安全性等方面。目前常见的序列化协议主要有[hessian](http://hessian.caucho.com/)，XML、JSON、[Protobuf](https://github.com/google/protobuf)、[Thrift](https://thrift.apache.org/)和[Avro](https://avro.apache.org/)。
 
 例如，[pigeon](https://github.com/wu-xiang/pigeon)支持多种序列化方式，序列化方式只需要在客户端调用时通过serialize属性指定，一般情况推荐兼容性最好的hessian。如果需要自行设计序列化方式，可以继承com.dianping.pigeon.remoting.common.codec.DefaultAbstractSerializer类来定义自己的序列化类，并通过SerializerFactory.registerSerializer\(byte serializerType, Serializer serializer\)接口将自定义的序列化类注册进来。
+
+## 负载均衡
+
+负载平衡（Load balancing）是一种计算机网络技术，用来在多个计算机（计算机集群）、网络连接、CPU、磁盘驱动器或其他资源中分配负载，以达到最佳化资源使用、最大化吞吐率、最小化响应时间、同时避免过载的目的。负载均衡器有各种各样的工作排程算法（用于决定将前端用户请求发送到哪一个后台服务器），最简单的是随机选择和轮询。更为高级的负载均衡器会考虑其它更多的相关因素，如后台服务器的负载，响应时间，运行状态，活动连接数，地理位置，处理能力，或最近分配的流量。
+
+例如，[pigeon](https://github.com/wu-xiang/pigeon)支持random、[roundRobin](https://zh.wikipedia.org/wiki/循環制)、weightedAutoware这几种类型，默认weighted Autoware策略。在pigeon框架中在每一次发送请求时都会有在线程中计算请求的返回时间，weighted Autoware策略是根据各个线程统计的响应时间来判断该服务的负载情况，响应时间越长说明该机器的负载越重。
 
