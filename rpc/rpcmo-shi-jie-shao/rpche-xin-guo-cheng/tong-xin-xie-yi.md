@@ -1,6 +1,6 @@
 # 通信协议
 
-RPC框架与具体的协议无关。RPC 可基于**HTTP 或 TCP 协议**，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。
+RPC框架与具体的协议无关。RPC 可基于**HTTP 或 TCP 协议**，Web Service 就是基于 HTTP 协议的 RPC，它具有良好的跨平台性，但其性能却不如基于 TCP 协议的 RPC。最早的CORBA，Java RMI，Web Service的RPC风格，Hessian，Thrift，甚至Restful API
 
 1. **TCP/HTTP**：众所周知，TCP 是传输层协议，HTTP 是应用层协议，而传输层较应用层更加底层，在数据传输方面，越底层越快，因此，在一般情况下，TCP 一定比 HTTP 快。
 2. **消息ID**：RPC 的应用场景实质是一种**可靠的请求应答消息流**，和 HTTP 类似。因此选择长连接方式的 TCP 协议会更高效，与 HTTP 不同的是在协议层面我们**定义了每个消息的唯一 id**，因此可以更容易的复用连接。
