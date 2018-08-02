@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [RPC](rpc.md)
   * [RPC模式介绍](rpc/rpcmo-shi-jie-shao.md)
-    * RPC概念
+    * [RPC概念](rpc/rpcmo-shi-jie-shao/rpcgai-nian.md)
     * [RPC核心过程](rpc/rpcmo-shi-jie-shao/rpche-xin-guo-cheng.md)
       * 通信协议
       * 寻址
