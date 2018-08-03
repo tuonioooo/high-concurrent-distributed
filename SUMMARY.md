@@ -37,7 +37,6 @@
       * [队列管理](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/dui-lie-guan-li.md)
 * [Dubbo框架](dubbokuang-jia.md)
   * [Dubbo介绍](dubbokuang-jia/jie-shao.md)
-  * dubbo服务化思想
   * [dubbo特性](dubbokuang-jia/dubbote-xing.md)
     * 服务发现机制
     * mock机制
