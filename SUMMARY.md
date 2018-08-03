@@ -37,19 +37,5 @@
       * [队列管理](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/dui-lie-guan-li.md)
 * [Dubbo框架](dubbokuang-jia.md)
   * [Dubbo介绍](dubbokuang-jia/jie-shao.md)
-  * [dubbo特性](dubbokuang-jia/dubbote-xing.md)
-    * [服务发现机制](dubbokuang-jia/dubbote-xing/fu-wu-fa-xian-ji-zhi.md)
-    * mock机制
-    * 容错机制
-    * 负载均衡机制
-    * 序列化方式
-    * 多协议支持
-  * [dubbo原理源码解读](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du.md)
-    * 配置加载机制
-    * 数据绑定实现原理
-    * 与Spring集成原理
-    * [rpc协议原理](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du/rpcxie-yi-yuan-li.md)
-    * [netty的使用](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du/nettyde-shi-yong.md)
-    * [dubbo整体的设计分析](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du/dubbozheng-ti-de-she-ji-fen-xi.md)
-  * Dubbo常见问题解析
+  * [Dubbo常见问题解析](dubbokuang-jia/dubbochang-jian-wen-ti-jie-xi.md)
 
