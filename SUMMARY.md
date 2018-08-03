@@ -38,7 +38,18 @@
 * [Dubbo框架](dubbokuang-jia.md)
   * 介绍
   * dubbo服务化思想
-  * dubbo特性
-  * dubbo原理源码解读
+  * [dubbo特性](dubbokuang-jia/dubbote-xing.md)
+    * 服务发现机制
+    * mock机制
+    * 容错机制
+    * 负载均衡机制
+    * 序列化方式
+    * 多协议支持
+  * [dubbo原理源码解读](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du.md)
+    * 配置加载机制
+    * 数据绑定实现原理
+    * 与Spring集成原理
+    * rpc协议原理
+    * netty的使用
   * Dubbo常见问题解析
 
