@@ -34,4 +34,5 @@
       * [集群管理（Group Membership）](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/ji-qun-de-rong-cuo.md)
       * [统一的命名服务](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/ming-ming-fu-wu.md)
       * zk的注意事项
+      * [队列管理](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/dui-lie-guan-li.md)
 
