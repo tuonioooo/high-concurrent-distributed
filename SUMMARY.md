@@ -35,4 +35,9 @@
       * [统一的命名服务](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/ming-ming-fu-wu.md)
       * [zookeeper的注意事项](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/zkde-zhu-yi-shi-xiang.md)
       * [队列管理](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/dui-lie-guan-li.md)
+* [Dubbo框架](dubbokuang-jia.md)
+  * 介绍
+  * dubbo服务化思想
+  * dubbo特性
+  * dubbo原理源码解读
 
