@@ -51,5 +51,6 @@
     * 与Spring集成原理
     * rpc协议原理
     * netty的使用
+    * dubbo整体的设计分析
   * Dubbo常见问题解析
 
