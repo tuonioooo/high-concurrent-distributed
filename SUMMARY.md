@@ -38,7 +38,7 @@
 * [Dubbo框架](dubbokuang-jia.md)
   * [Dubbo介绍](dubbokuang-jia/jie-shao.md)
   * [dubbo特性](dubbokuang-jia/dubbote-xing.md)
-    * 服务发现机制
+    * [服务发现机制](dubbokuang-jia/dubbote-xing/fu-wu-fa-xian-ji-zhi.md)
     * mock机制
     * 容错机制
     * 负载均衡机制
@@ -48,8 +48,8 @@
     * 配置加载机制
     * 数据绑定实现原理
     * 与Spring集成原理
-    * rpc协议原理
-    * netty的使用
-    * dubbo整体的设计分析
+    * [rpc协议原理](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du/rpcxie-yi-yuan-li.md)
+    * [netty的使用](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du/nettyde-shi-yong.md)
+    * [dubbo整体的设计分析](dubbokuang-jia/dubboyuan-li-yuan-ma-jie-du/dubbozheng-ti-de-she-ji-fen-xi.md)
   * Dubbo常见问题解析
 
