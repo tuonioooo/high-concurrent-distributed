@@ -1,7 +1,5 @@
 # dubbo整体的设计分析
 
-# 框架设计
-
 ## 整体设计
 
 ![](http://dubbo.apache.org/docs/zh-cn/dev/sources/images/dubbo-framework.jpg "/dev-guide/images/dubbo-framework.jpg")
