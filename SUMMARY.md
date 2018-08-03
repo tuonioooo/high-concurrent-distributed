@@ -30,7 +30,7 @@
     * [Zookeeper集群](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/zookeeperji-qun.md)
     * [典型的应用场景](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing.md)
       * [分布式配置中心](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/fen-bu-shi-pei-zhi-zhong-xin.md)
-      * 分布式锁
+      * [分布式锁](fen-bu-shi-xi-tong-zookeeper/zookeepergao-ji-zhi-shi/dian-xing-de-ying-yong-chang-jing/fen-bu-shi-suo.md)
       * 集群的容错
       * 命名服务
       * zk的注意事项
